@@ -1,13 +1,9 @@
-class Response:
+from setuptools import setup, find_packages
 
-    def print(self):
-        print('bar')
-
-
-class Command:
-
-    def print(self):
-        print('foo')
-
-    def response(self):
-        return Response()
+setup(
+    name='fcm-interface',
+    packages=find_packages(include=['fcm-interface']),
+    version='0.1.0',
+    description='FCM Interface',
+    license='MIT'
+)
